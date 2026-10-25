@@ -5,6 +5,10 @@
 
 ![预览动画](preview.gif)
 
+> **直接下载** → [dsh-boot-intro.html](https://github.com/GaoHaoRan123/DeepSeek-Harness-startup-animation-tokamak-device-/releases/download/v1.0.0/dsh-boot-intro.html)（双击即播，零依赖）
+> **在线演示** → [打开网页版](https://gaohaoran123.github.io/DeepSeek-Harness-startup-animation-tokamak-device-/)
+> **装进 DeepSeek Harness** → 插件里填 `github:GaoHaoRan123/DeepSeek-Harness-startup-animation-tokamak-device-`
+
 - 时长 **9.2 秒**，**随时可按 `Enter` 打断**
 - 风格：**托卡马克控制室 HUD**，冷蓝/青色等离子体、磁场线圈、遥测数据流
 - **零依赖**：单个 HTML 文件，双击即可播放，不需要服务器、不需要联网、不需要构建
@@ -18,6 +22,12 @@
 
 ```
 dist/dsh-boot-intro.html
+```
+
+它已发布在 Releases，点这个链接会直接下载（文件名正确、不会被浏览器当成源码显示）：
+
+```
+https://github.com/GaoHaoRan123/DeepSeek-Harness-startup-animation-tokamak-device-/releases/download/v1.0.0/dsh-boot-intro.html
 ```
 
 它是**完全自包含**的（渲染器已内联，0 个外部引用）。想换成自己的产品名：

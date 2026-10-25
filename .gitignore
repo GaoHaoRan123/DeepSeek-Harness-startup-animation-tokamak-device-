@@ -1,0 +1,17 @@
+# dependencies (none are needed to *use* the animation)
+node_modules/
+
+# NB: dist/ is intentionally committed. dist/dsh-boot-intro.html is the
+# "download one file and double-click" artifact, so it must be fetchable
+# straight from the repository (and attached to Releases).
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# local scratch
+*.local.*
+scratch/

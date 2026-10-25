@@ -1,0 +1,61 @@
+{
+  "name": "dsh-boot-intro",
+  "version": "1.0.0",
+  "description": "Sci-fi tokamak fusion ignition startup animation: a self-contained HTML file, and an installable DeepSeek Harness startup plugin.",
+  "type": "module",
+  "license": "MIT",
+  "main": "plugin/lib/index.js",
+  "exports": {
+    ".": "./plugin/lib/index.js",
+    "./client": "./plugin/lib/client.js",
+    "./cordis.patch.yml": "./plugin/cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./plugin/cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "files": [
+    "plugin/lib/index.js",
+    "plugin/lib/client.js",
+    "plugin/cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "build:single": "node build-single.mjs",
+    "test": "node test-loop.mjs && node plugin/test-integration.mjs",
+    "install:plugin": "node plugin/manage.mjs install",
+    "uninstall:plugin": "node plugin/manage.mjs uninstall",
+    "status": "node plugin/manage.mjs status"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "boot-animation",
+    "splash-screen",
+    "tokamak",
+    "fusion",
+    "canvas",
+    "sci-fi"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,13 @@
+# dsh-boot-intro bundle patch.
+#
+# Contributes one host row. The row exists so the bundle mounts cleanly; the
+# actual feature is the browser half, declared by `dsh.client` in package.json
+# and served from lib/client.js, which registers itself into the
+# `shell.overlay` slot and draws the fusion startup animation.
+#
+# The row `name` is the real package name and resolves through
+# <profile>/node_modules, matching how every other installed bundle here works.
+
+- insert:
+    - id: dsh-boot-intro
+      name: 'dsh-boot-intro'

@@ -1,0 +1,46 @@
+{
+  "name": "dsh-boot-intro",
+  "version": "1.0.0",
+  "description": "Tokamak fusion ignition startup animation for DeepSeek Harness: a sci-fi magnetic-confinement control-room HUD that plays over the shell on launch, skippable with Enter.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "boot-animation",
+    "tokamak",
+    "fusion",
+    "sci-fi"
+  ],
+  "license": "MIT"
+}

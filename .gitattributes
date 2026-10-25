@@ -1,0 +1,8 @@
+# Normalise line endings so the repository stores LF regardless of the
+# contributor's platform (this project was authored on Windows, where Git
+# defaults to CRLF on checkout).
+* text=auto eol=lf
+
+# Binary assets: never attempt line-ending conversion.
+*.gif binary
+*.png binary
